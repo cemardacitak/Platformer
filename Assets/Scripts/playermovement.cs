@@ -70,6 +70,7 @@ public class playermovement : MonoBehaviour
         {
             body.velocity = new Vector2(body.velocity.x,jumpPower);
             anim.SetTrigger("jump");
+            
         }
         else if (onwall() && ! İsgrounded())
         {
