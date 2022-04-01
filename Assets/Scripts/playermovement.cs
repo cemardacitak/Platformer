@@ -38,6 +38,11 @@ public class playermovement : MonoBehaviour
         ///set animator parameters
         anim.SetBool("run",horizontalinput != 0);
         anim.SetBool("grounded", İsgrounded());
+        anim.SetBool("isWallSliding",onwall());
+        
+
+
+
 
         //duvara cool down ver ki duvardan zıplama çalışsın
         if (WallJumpCoolDown > 0.2f)
@@ -46,15 +51,15 @@ public class playermovement : MonoBehaviour
             body.velocity = new Vector2(horizontalinput*speed,body.velocity.y);
 
              //stick to wall
-            if(onwall() && ! İsgrounded())
+            if(onwall() && !İsgrounded())
             {   
                 body.gravityScale = 0;
                 body.velocity = new Vector2(0,-1f);
-                
             }
             else
             {
-                body.gravityScale =3;
+
+                body.gravityScale = 3;;
             }
             if (Input.GetKeyDown(KeyCode.Space) )
             Jump();
@@ -72,8 +77,9 @@ public class playermovement : MonoBehaviour
             anim.SetTrigger("jump");
             
         }
-        else if (onwall() && ! İsgrounded())
+        else if (onwall() && !İsgrounded())
         {
+            
             if (horizontalinput == 0)
             {
                 body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x)*10,0);
