@@ -14,6 +14,8 @@ public class Player_Movement : MonoBehaviour
     private float WallJumpCoolDown;
     private float horizontalinput;
 
+    private bool triggerDelay;
+    private float triggerTime;
 
     private void Awake()
      {
@@ -49,6 +51,17 @@ public class Player_Movement : MonoBehaviour
             anim.SetBool("isJumping", true);
         }
 
+        if (triggerDelay == true)
+        {
+            triggerTime += Time.deltaTime;
+            if (triggerTime > 0.1f)
+            {
+                anim.SetTrigger("jump");
+                triggerDelay = false;
+                triggerTime = 0;
+            }
+        }
+
         //duvara cool down ver ki duvardan zıplama çalışsın
         if (WallJumpCoolDown > 0.2f)
         {
@@ -81,9 +94,10 @@ public class Player_Movement : MonoBehaviour
     {
         if (isGrounded())
         {
-            anim.SetTrigger("jump");
-            body.velocity = new Vector2(body.velocity.x,jumpPower);
             
+            body.velocity = new Vector2(body.velocity.x,jumpPower);
+            anim.SetTrigger("jump");
+            triggerDelay = true;
         }
         else if (onWall() && !isGrounded())
         {
