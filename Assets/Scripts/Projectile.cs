@@ -9,6 +9,7 @@ public class Projectile : MonoBehaviour
     private float direction;
     private Animator anim;
     private BoxCollider2D boxCollider;
+    private float LifeTime;
 
     private void Awake()
     {
@@ -25,6 +26,8 @@ public class Projectile : MonoBehaviour
         }
         float movementSpeed = speed * Time.deltaTime * direction;
         transform.Translate(movementSpeed,0,0);
+        LifeTime += Time.deltaTime;
+        if(LifeTime > 5) gameObject.SetActive(false);
     }
 
     // When fireball hits something do this:
@@ -37,6 +40,7 @@ public class Projectile : MonoBehaviour
 
     public void SetDirection(float _direction)
     {
+        LifeTime =0;
         direction = _direction;
         gameObject.SetActive(true);
         hit = false;

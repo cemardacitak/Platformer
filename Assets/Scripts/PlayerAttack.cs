@@ -28,9 +28,21 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         anim.SetTrigger("fireball");
-        fireballs[0].transform.position = FirePoint.position;
-        fireballs[0].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
+        fireballs[FindFireball()].transform.position = FirePoint.position;
+        fireballs[FindFireball()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
         coolDownTimer = 0;
         
+    }
+    private int FindFireball()
+    {
+         for (int i = 0; i < fireballs.Length; i++) 
+         {
+             if(!fireballs[i].activeInHierarchy)
+                 return i;
+
+   
+         }
+         return 0;
+
     }
 }
