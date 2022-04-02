@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask duvarLayer;
     private Rigidbody2D body;
     private Animator anim;
-    private bool grounded;
     private BoxCollider2D boxcollider;
     private float WallJumpCoolDown;
     private float horizontalinput;
@@ -26,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update() 
     {
+        print(isGrounded());
         horizontalinput = Input.GetAxisRaw("Horizontal");
 
         ///flip player left or right
@@ -39,7 +39,15 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("run",horizontalinput != 0);
         anim.SetBool("grounded", isGrounded());
         anim.SetBool("isWallSliding", onWall());
-
+        
+        if (isGrounded())
+        {
+            anim.SetBool("isJumping", false);
+        }
+        else
+        {
+            anim.SetBool("isJumping", true);
+        }
 
         //duvara cool down ver ki duvardan zıplama çalışsın
         if (WallJumpCoolDown > 0.2f)
@@ -60,7 +68,9 @@ public class PlayerMovement : MonoBehaviour
                 body.gravityScale = 3;;
             }
             if (Input.GetKeyDown(KeyCode.Space) )
-            Jump();
+            {
+                Jump();
+            }
         }
         else 
             WallJumpCoolDown += Time.deltaTime;
@@ -71,8 +81,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isGrounded())
         {
-            body.velocity = new Vector2(body.velocity.x,jumpPower);
             anim.SetTrigger("jump");
+            body.velocity = new Vector2(body.velocity.x,jumpPower);
             
         }
         else if (onWall() && !isGrounded())
@@ -109,7 +119,7 @@ public class PlayerMovement : MonoBehaviour
     // Check is it touching ground
     private bool isGrounded()
     {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxcollider.bounds.center,boxcollider.bounds.size,0,Vector2.down,0.01f,yerLayer);
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxcollider.bounds.center,boxcollider.bounds.size,0,Vector2.down,0.03f,yerLayer);
         return raycastHit.collider != null;
     }
 

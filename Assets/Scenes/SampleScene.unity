@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331c4a4f681a5234089ef7d87e783b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 12
 --- !u!212 &409595527
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -651,7 +651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331c4a4f681a5234089ef7d87e783b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 12
 --- !u!1 &1068223601
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,7 +874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331c4a4f681a5234089ef7d87e783b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 12
 --- !u!212 &1117414175
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331c4a4f681a5234089ef7d87e783b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 12
 --- !u!212 &1225451552
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1204,7 +1204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331c4a4f681a5234089ef7d87e783b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 12
 --- !u!212 &1460337000
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1369,7 +1369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331c4a4f681a5234089ef7d87e783b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 12
 --- !u!212 &1604780747
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1534,7 +1534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331c4a4f681a5234089ef7d87e783b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 12
 --- !u!212 &1605800121
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1610,7 +1610,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689083223}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 0.11, z: -4.6341867}
+  m_LocalPosition: {x: 1.25, y: 0.11, z: -4.6341867}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 34655932}
@@ -1812,7 +1812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331c4a4f681a5234089ef7d87e783b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 12
 --- !u!212 &1732222355
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1977,7 +1977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331c4a4f681a5234089ef7d87e783b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 12
 --- !u!212 &1794440593
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2142,7 +2142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331c4a4f681a5234089ef7d87e783b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 12
 --- !u!212 &1814623502
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2446,7 +2446,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132271396}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.09, y: 2.04, z: 0}
+  m_LocalPosition: {x: 15.735609, y: -3.8599997, z: 0}
   m_LocalScale: {x: 9.693042, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
