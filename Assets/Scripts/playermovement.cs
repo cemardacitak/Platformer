@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playermovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     public float speed;
     public float jumpPower;
@@ -37,9 +37,8 @@ public class playermovement : MonoBehaviour
 
         ///set animator parameters
         anim.SetBool("run",horizontalinput != 0);
-        anim.SetBool("grounded", İsgrounded());
-
-
+        anim.SetBool("grounded", isGrounded());
+        anim.SetBool("isWallSliding", onWall());
 
 
         //duvara cool down ver ki duvardan zıplama çalışsın
@@ -49,7 +48,7 @@ public class playermovement : MonoBehaviour
             body.velocity = new Vector2(horizontalinput*speed,body.velocity.y);
 
              //stick to wall
-            if(onwall() && !İsgrounded())
+            if(onWall() && !isGrounded())
             {   
                 body.gravityScale = 0;
                 body.velocity = new Vector2(0,-1.3f);
@@ -70,13 +69,13 @@ public class playermovement : MonoBehaviour
     
     private void Jump() 
     {
-        if (İsgrounded())
+        if (isGrounded())
         {
             body.velocity = new Vector2(body.velocity.x,jumpPower);
             anim.SetTrigger("jump");
             
         }
-        else if (onwall() && !İsgrounded())
+        else if (onWall() && !isGrounded())
         {
             
             if (horizontalinput == 0)
@@ -98,32 +97,33 @@ public class playermovement : MonoBehaviour
         
     }
 
+
+    // OnCollision with Duvar
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Duvar"))
         {
-            anim.SetTrigger("wallSlide");
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Duvar"))
-        {
-            anim.SetTrigger("notWallSlide");
+            anim.SetTrigger("isWallSlideTriggered");
         }
     }
     
-
-    private bool İsgrounded()
+    // Check is it touching ground
+    private bool isGrounded()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxcollider.bounds.center,boxcollider.bounds.size,0,Vector2.down,0.01f,yerLayer);
         return raycastHit.collider != null;
-}
-     private bool onwall()
+    }
+
+    // Check is it touching wall 
+     private bool onWall()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxcollider.bounds.center,boxcollider.bounds.size,0,new Vector2(transform.localScale.x,0),0.01f,duvarLayer);
         return raycastHit.collider != null;
-}
+    }
+
+    public bool canAttack()
+    {
+        return horizontalinput == 0 && isGrounded() && !onWall();
+    }
 }
     
 
