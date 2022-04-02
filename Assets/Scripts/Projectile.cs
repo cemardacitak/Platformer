@@ -44,10 +44,11 @@ public class Projectile : MonoBehaviour
 
         float localScaleX = transform.localScale.x;
         if (Mathf.Sign(localScaleX) != _direction)
+           
         {
             localScaleX = -localScaleX;
         }
-        
+        transform.localScale = new Vector3(localScaleX,transform.localScale.y,transform.localScale.z);
     }
 
     private void Deactive()
