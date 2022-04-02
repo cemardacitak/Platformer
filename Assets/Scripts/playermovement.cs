@@ -38,8 +38,6 @@ public class playermovement : MonoBehaviour
         ///set animator parameters
         anim.SetBool("run",horizontalinput != 0);
         anim.SetBool("grounded", İsgrounded());
-        anim.SetBool("isWallSliding",onwall());
-        
 
 
 
@@ -54,7 +52,8 @@ public class playermovement : MonoBehaviour
             if(onwall() && !İsgrounded())
             {   
                 body.gravityScale = 0;
-                body.velocity = new Vector2(0,-1f);
+                body.velocity = new Vector2(0,-1.3f);
+                
             }
             else
             {
@@ -100,7 +99,18 @@ public class playermovement : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Duvar"))
+        {
+            anim.SetTrigger("wallSlide");
+        }
+    }
 
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Duvar"))
+        {
+            anim.SetTrigger("notWallSlide");
+        }
     }
     
 
