@@ -1,42 +1,45 @@
 fileFormatVersion: 2
-guid: e3bb1d95d890fa545b98865b46ef962d
+guid: 97d5ce53f3ac76e4888319c6a53c7ff3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8651882486754356436
-    second: Country_village_props_0
+      213: 7166236263522030466
+    second: Run (32x32)_0
   - first:
-      213: 4086155540494960188
-    second: Country_village_props_1
+      213: 2470319409956435798
+    second: Run (32x32)_1
   - first:
-      213: 916672909051324190
-    second: Country_village_props_2
+      213: -4540918584354326388
+    second: Run (32x32)_2
   - first:
-      213: -2459007653950548366
-    second: Country_village_props_3
+      213: -4455822056875728695
+    second: Run (32x32)_3
   - first:
-      213: 7841033218216571160
-    second: Country_village_props_4
+      213: -5364790588639958657
+    second: Run (32x32)_4
   - first:
-      213: 3522988763366429048
-    second: Country_village_props_5
+      213: -1512656188830553638
+    second: Run (32x32)_5
   - first:
-      213: 6164480723226713445
-    second: Country_village_props_6
+      213: -2754230144694611447
+    second: Run (32x32)_6
   - first:
-      213: 5582393727095639186
-    second: Country_village_props_7
+      213: -2419971920513260168
+    second: Run (32x32)_7
   - first:
-      213: 7678197216060760516
-    second: Country_village_props_8
+      213: 1843850012483549754
+    second: Run (32x32)_8
   - first:
-      213: 3189824586505881661
-    second: Country_village_props_9
+      213: 241620830004830169
+    second: Run (32x32)_9
   - first:
-      213: -2408633024917980654
-    second: Country_village_props_10
+      213: -362971539341918764
+    second: Run (32x32)_10
+  - first:
+      213: 2178398316516280758
+    second: Run (32x32)_11
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -56,7 +59,6 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
-  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -66,8 +68,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: 1
-    mipBias: 0
+    aniso: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -79,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -88,20 +90,16 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
-  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,7 +111,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,76 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Country_village_props_0
+      name: Run (32x32)_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 64
-        width: 102
-        height: 123
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c23559ac7b65ee780800000000000000
-      internalID: -8651882486754356436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Country_village_props_1
-      rect:
-        serializedVersion: 2
-        x: 122
-        y: 64
-        width: 59
-        height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c36423090d0f4b830800000000000000
-      internalID: 4086155540494960188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Country_village_props_2
-      rect:
-        serializedVersion: 2
-        x: 204
-        y: 64
-        width: 121
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e176a3f672da8bc00800000000000000
-      internalID: 916672909051324190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Country_village_props_3
-      rect:
-        serializedVersion: 2
-        x: 35
+        x: 0
         y: 0
-        width: 10
-        height: 5
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2769f4e2199dfddd0800000000000000
-      internalID: -2459007653950548366
+      spriteID: 8fb45ad6bc8982941a17952a50b63619
+      internalID: 7166236263522030466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Country_village_props_4
+      name: Run (32x32)_1
       rect:
         serializedVersion: 2
-        x: 52
+        x: 32
         y: 0
-        width: 10
-        height: 4
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81136db1b22f0dc60800000000000000
-      internalID: 7841033218216571160
+      spriteID: bb5e5ee4d6bea5e4caf1f40ce19219a6
+      internalID: 2470319409956435798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Country_village_props_5
+      name: Run (32x32)_2
       rect:
         serializedVersion: 2
-        x: 66
+        x: 64
         y: 0
-        width: 12
-        height: 9
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 871162c5d9b24e030800000000000000
-      internalID: 3522988763366429048
+      spriteID: d4dd2798f18527844bc78d8e1adc6b16
+      internalID: -4540918584354326388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Country_village_props_6
+      name: Run (32x32)_3
       rect:
         serializedVersion: 2
-        x: 81
+        x: 96
         y: 0
-        width: 16
-        height: 11
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56ddba49e82ac8550800000000000000
-      internalID: 6164480723226713445
+      spriteID: 63217c56eea7ace48be19eef4ec0a26e
+      internalID: -4455822056875728695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Country_village_props_7
+      name: Run (32x32)_4
       rect:
         serializedVersion: 2
-        x: 98
+        x: 128
         y: 0
-        width: 15
-        height: 8
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,41 +220,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29c87eb9485a87d40800000000000000
-      internalID: 5582393727095639186
+      spriteID: 83b4c187fec3b78469aa17706c0b0c70
+      internalID: -5364790588639958657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Country_village_props_8
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 0
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c1e1baefaf6e8a60800000000000000
-      internalID: 7678197216060760516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Country_village_props_9
+      name: Run (32x32)_5
       rect:
         serializedVersion: 2
         x: 160
         y: 0
-        width: 23
-        height: 13
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,20 +241,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d388d7e9f88844c20800000000000000
-      internalID: 3189824586505881661
+      spriteID: a9a62dd268913a242ac0af25c3a1e9aa
+      internalID: -1512656188830553638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Country_village_props_10
+      name: Run (32x32)_6
       rect:
         serializedVersion: 2
-        x: 207
+        x: 192
         y: 0
-        width: 86
-        height: 49
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,8 +262,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21a3d7b7601d29ed0800000000000000
-      internalID: -2408633024917980654
+      spriteID: c64834d9f040ac944b3bef094a8da580
+      internalID: -2754230144694611447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run (32x32)_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2d3f02228a7204da6b547ecbb857ed
+      internalID: -2419971920513260168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run (32x32)_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253ed91402a493f478b3e9b77c6b6250
+      internalID: 1843850012483549754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run (32x32)_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c26ffd3cf77583449ad5a2f16d3aaa0
+      internalID: 241620830004830169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run (32x32)_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee80e1206f475c1428ac3fdfd1b0e955
+      internalID: -362971539341918764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run (32x32)_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d32009b5b507154e8159549769271cc
+      internalID: 2178398316516280758
       vertices: []
       indices: 
       edges: []

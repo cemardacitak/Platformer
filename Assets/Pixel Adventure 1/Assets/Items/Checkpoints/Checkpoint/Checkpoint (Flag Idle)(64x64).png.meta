@@ -1,42 +1,39 @@
 fileFormatVersion: 2
-guid: e3bb1d95d890fa545b98865b46ef962d
+guid: 27a107940057e8743a507269b18a691a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8651882486754356436
-    second: Country_village_props_0
+      213: -8187355101989356663
+    second: Checkpoint (Flag Idle)(64x64)_0
   - first:
-      213: 4086155540494960188
-    second: Country_village_props_1
+      213: 3854939560234354291
+    second: Checkpoint (Flag Idle)(64x64)_1
   - first:
-      213: 916672909051324190
-    second: Country_village_props_2
+      213: -2176918498148329165
+    second: Checkpoint (Flag Idle)(64x64)_2
   - first:
-      213: -2459007653950548366
-    second: Country_village_props_3
+      213: -1878543983233424424
+    second: Checkpoint (Flag Idle)(64x64)_3
   - first:
-      213: 7841033218216571160
-    second: Country_village_props_4
+      213: 5249495973877922429
+    second: Checkpoint (Flag Idle)(64x64)_4
   - first:
-      213: 3522988763366429048
-    second: Country_village_props_5
+      213: 7294162130811222863
+    second: Checkpoint (Flag Idle)(64x64)_5
   - first:
-      213: 6164480723226713445
-    second: Country_village_props_6
+      213: 5907192917678821646
+    second: Checkpoint (Flag Idle)(64x64)_6
   - first:
-      213: 5582393727095639186
-    second: Country_village_props_7
+      213: -3698963325330885405
+    second: Checkpoint (Flag Idle)(64x64)_7
   - first:
-      213: 7678197216060760516
-    second: Country_village_props_8
+      213: -7168325035351650290
+    second: Checkpoint (Flag Idle)(64x64)_8
   - first:
-      213: 3189824586505881661
-    second: Country_village_props_9
-  - first:
-      213: -2408633024917980654
-    second: Country_village_props_10
+      213: -8728669653598591988
+    second: Checkpoint (Flag Idle)(64x64)_9
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -56,7 +53,6 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
-  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -66,8 +62,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: 1
-    mipBias: 0
+    aniso: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -79,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -88,20 +84,16 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
-  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,76 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Country_village_props_0
+      name: Checkpoint (Flag Idle)(64x64)_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 64
-        width: 102
-        height: 123
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c23559ac7b65ee780800000000000000
-      internalID: -8651882486754356436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Country_village_props_1
-      rect:
-        serializedVersion: 2
-        x: 122
-        y: 64
-        width: 59
-        height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c36423090d0f4b830800000000000000
-      internalID: 4086155540494960188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Country_village_props_2
-      rect:
-        serializedVersion: 2
-        x: 204
-        y: 64
-        width: 121
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e176a3f672da8bc00800000000000000
-      internalID: 916672909051324190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Country_village_props_3
-      rect:
-        serializedVersion: 2
-        x: 35
+        x: 0
         y: 0
-        width: 10
-        height: 5
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2769f4e2199dfddd0800000000000000
-      internalID: -2459007653950548366
+      spriteID: 78fa78448f70c1e4faf49c9f88a9c54b
+      internalID: -8187355101989356663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Country_village_props_4
+      name: Checkpoint (Flag Idle)(64x64)_1
       rect:
         serializedVersion: 2
-        x: 52
+        x: 64
         y: 0
-        width: 10
-        height: 4
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81136db1b22f0dc60800000000000000
-      internalID: 7841033218216571160
+      spriteID: ab3e50640594789418addc0acc5cbc36
+      internalID: 3854939560234354291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Country_village_props_5
+      name: Checkpoint (Flag Idle)(64x64)_2
       rect:
         serializedVersion: 2
-        x: 66
+        x: 128
         y: 0
-        width: 12
-        height: 9
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 871162c5d9b24e030800000000000000
-      internalID: 3522988763366429048
+      spriteID: 6168b3c29d1b8d648a71c46aa04577a7
+      internalID: -2176918498148329165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Country_village_props_6
+      name: Checkpoint (Flag Idle)(64x64)_3
       rect:
         serializedVersion: 2
-        x: 81
+        x: 192
         y: 0
-        width: 16
-        height: 11
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56ddba49e82ac8550800000000000000
-      internalID: 6164480723226713445
+      spriteID: f5e74464f83e05e4f92c67249e2e2c25
+      internalID: -1878543983233424424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Country_village_props_7
+      name: Checkpoint (Flag Idle)(64x64)_4
       rect:
         serializedVersion: 2
-        x: 98
+        x: 256
         y: 0
-        width: 15
-        height: 8
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29c87eb9485a87d40800000000000000
-      internalID: 5582393727095639186
+      spriteID: 4da96e01361d1774a8cbb03e94b32a8c
+      internalID: 5249495973877922429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Country_village_props_8
+      name: Checkpoint (Flag Idle)(64x64)_5
       rect:
         serializedVersion: 2
-        x: 129
+        x: 320
         y: 0
-        width: 15
-        height: 15
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,20 +235,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c1e1baefaf6e8a60800000000000000
-      internalID: 7678197216060760516
+      spriteID: 70dbacd09ee556d41872d40a6aad6ac8
+      internalID: 7294162130811222863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Country_village_props_9
+      name: Checkpoint (Flag Idle)(64x64)_6
       rect:
         serializedVersion: 2
-        x: 160
+        x: 384
         y: 0
-        width: 23
-        height: 13
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,20 +256,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d388d7e9f88844c20800000000000000
-      internalID: 3189824586505881661
+      spriteID: 28c3be9e40a4bdb49a3c10f95a2fbf02
+      internalID: 5907192917678821646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Country_village_props_10
+      name: Checkpoint (Flag Idle)(64x64)_7
       rect:
         serializedVersion: 2
-        x: 207
+        x: 448
         y: 0
-        width: 86
-        height: 49
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,8 +277,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21a3d7b7601d29ed0800000000000000
-      internalID: -2408633024917980654
+      spriteID: 220aede3c45c00f4298430afe2b5ed54
+      internalID: -3698963325330885405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Checkpoint (Flag Idle)(64x64)_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecf1bddbdede9e4f831427f0e872926
+      internalID: -7168325035351650290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Checkpoint (Flag Idle)(64x64)_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a155caba278ac45bea2b8e7ffcea0f
+      internalID: -8728669653598591988
       vertices: []
       indices: 
       edges: []
